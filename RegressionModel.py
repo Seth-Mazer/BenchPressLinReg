@@ -104,7 +104,7 @@ y = df['PR']
 z = df['BodyWeight']
 
 #Creating scatter plot, using the xyz variables, with the plasma color gradient and a dot size of 60
-scatter = chart.scatter(x,y,z, c=z, cmap='Blues', s=60)
+scatter = chart.scatter(x,y,z, c=y, cmap='Blues', s=60)
 
 #Plotting the regression plane
 chart.plot_surface(xGrid, yGrid, zGrid, alpha=0.9, color='red')
